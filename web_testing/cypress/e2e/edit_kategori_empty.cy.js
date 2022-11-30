@@ -14,8 +14,12 @@ describe("Testing the application", function() {
       cy.get('.btn').click()
 
       cy.get('[href="tambah_kategori.php"]').click()
-
-      cy.get(':nth-child(8) > :nth-child(3) > .btn-danger').click()
       
+      cy.get(':nth-child(8) > :nth-child(3) > .btn-info').click()
+
+      cy.get('[type="text"]').clear()
+
+      cy.get('.m-3 > .btn').click()
+
   });
 });
